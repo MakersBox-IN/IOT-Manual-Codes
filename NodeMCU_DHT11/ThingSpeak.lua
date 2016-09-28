@@ -31,7 +31,7 @@ function postThingSpeak(level)
  
         print ("Posting...");    
  
-        connout:send("GET /update?api_key=<WriteAPIkey of channel at ThingSpeak>&field1=&field2="..temp.."."..temp_dec
+        connout:send("GET /update?api_key=<WriteAPIkey of channel at ThingSpeak>&field1="..temp.."."..temp_dec.."&field2="..humi.."."..humi_dec
         .. " HTTP/1.1\r\n"
         .. "Host: api.thingspeak.com\r\n"
         .. "Connection: close\r\n"
